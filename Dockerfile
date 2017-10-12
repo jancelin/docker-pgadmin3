@@ -3,7 +3,9 @@ MAINTAINER Julien ANCELIN
 
 ENV LANG C.UTF-8
 
-RUN apt-get update && apt-get install -y pgadmin3 --no-install-recommends && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y pgadmin3  && rm -rf /var/lib/apt/lists/*
+#--no-install-recommends
+
 
 # Called when the Docker image is started in the container
 ADD start.sh /start.sh
