@@ -1,4 +1,9 @@
 * create a file on desktop
+
+```
+nano ./Bureau/pgadmin3
+```
+
 * copy paste 
 
 ```
@@ -22,8 +27,8 @@ docker run --rm \
     -e HHHOME=${HOME} \
     jancelin/docker-pgadmin3
 ```
-* chmod +x ./myfile
+* chmod +x ./Bureau/pgadmin3
 
-* ./myfile
+* ./Bureau/pgadmin3
 
 * enjoy
