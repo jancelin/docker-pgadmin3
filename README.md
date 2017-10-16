@@ -25,6 +25,7 @@ docker run --rm \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e DISPLAY=unix$DISPLAY \
     -e HHHOME=${HOME} \
+    --net=host \
     jancelin/docker-pgadmin3
 ```
 * chmod +x ./Bureau/pgadmin3
